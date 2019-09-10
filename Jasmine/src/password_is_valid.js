@@ -1,7 +1,20 @@
 function password_is_valid(password)
 {
+``/*	try{
+		if ((password === "") || !password)
+			throw new Error("password cannot be empty.");
+		else if (password.length < 8)
+			throw new Error("password is too short");
+	}
+	catch(err){
+		console.log(err);
+	}
+	return (false);
+*/
+
 	if ((password === "") || !password)
 		throw new Error("password cannot be empty.");
+		
 	else if(password.length < 8)
 		throw new Error("password is too short");
 	var i = 0;
@@ -34,3 +47,4 @@ function password_is_valid(password)
 	}
 	return ("password is not valid");
 }
+
