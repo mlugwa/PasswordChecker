@@ -1,9 +1,9 @@
 function password_is_valid(password)
 {
-	if (password.length < 8)
-		console.log("Error: password is too short");
-	if (!password)
-		console.log("Error: you have not entered a password.");
+	if ((password === "") || !password)
+		throw new Error("password cannot be empty.");
+	else if(password.length < 8)
+		throw new Error("password is too short");
 	var i = 0;
 	if (password.length >= 8)
 	{
@@ -32,6 +32,5 @@ function password_is_valid(password)
 			i++;
 		}
 	}
-	else
-		return ("password is not valid");
+	return ("password is not valid");
 }

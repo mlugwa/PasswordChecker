@@ -1,5 +1,0 @@
-let string = "Glory jumped over the moon"
-let regEx = /the moon/;
-let returnVal = string.test(regEx);
-
-console.log(returnVal);
