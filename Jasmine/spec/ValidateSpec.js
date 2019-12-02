@@ -1,3 +1,6 @@
+var passwordIsValid = require('../src/passwordIsValid.js');
+var passwordIsOk = require('../src/passwordIsOk.js');
+
 describe("Validate Password", function(){
 	
 	it("should throw an Error if password is empty or does not exist.", function(){

@@ -43,4 +43,4 @@ function passwordIsOk(password)
 	return (false);
 }
 
-console.log(passwordIsOk("aaaaas"));
+module.exports = passwordIsOk;

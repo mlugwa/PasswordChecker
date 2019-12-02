@@ -36,3 +36,5 @@ function passwordIsValid(password)
 			throw new Error("Password should have at least one special character");
 
 }
+
+module.exports = passwordIsValid;
